@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阿里</title>
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<style type="text/css">
+		#xing{
+			color: red;
+		}
+		#num{
+			float: right;
+		}
+		textarea{
+			width:600px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 600px;heiht:150px;">
+	<div>
+
+		<span id="xing">*</span><span>请填写备注</span><span id="num">(0/200)</span>
+	</div>
+		<textarea id="text" oninput="change();"></textarea>
+		<p style="color: red;"></p>
+	</div>
+	<script type="text/javascript">
+	function change(){
+		var s = $("#text").val();
+		var num = s.replace(/[\u0391-\uFFE5]/g,"aa").length;
+		$("#num").html("("+num+"/"+200+")");
+		if(num>200){
+			$("p").html("超过了字数限制");
+		}
+	}
+	
+	</script>
+</body>
+</html>
