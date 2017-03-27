@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js轮播图</title>
+	<link rel="stylesheet" type="text/css" href="jslunbo.css">
+	<script type="text/javascript" src="animate.js"></script>
+	<script type="text/javascript" src="slider.js"></script>
+</head>
+<body>
+<!--  Carousel_interval属性是轮播的间隔，可以不设置，默认为3000ms -->
+	<div id="Carousel" Carousel_interval="">
+		<ul id="list">
+			<li><img src="images/img4.jpeg" alt=""/></li>
+			<li><img src="images/img1.jpeg" alt=""/></li>
+			<li><img src="images/img2.jpeg" alt=""/></li>
+			<li><img src="images/img3.jpg" alt=""/></li>
+			<li><img src="images/img4.jpeg" alt=""/></li>
+			<li><img src="images/img1.jpeg" alt=""/></li>
+		</ul>
+		<div id="Carousel_buttons">
+			<span index="1" class="on"></span>
+			<span index="2"></span>
+			<span index="3"></span>
+			<span index="4"></span>
+		</div>
+		<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    	<a href="javascript:;" id="next" class="arrow">&gt;</a>
+	</div>
+</body>
+</html>
